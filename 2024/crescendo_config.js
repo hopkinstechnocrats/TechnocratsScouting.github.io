@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2023tnkn",
+      "defaultValue": "2024KKweek0",
       "required": "true"
     },
     { "name": "Match Level",
@@ -112,12 +112,12 @@ var config_data = `
       "code": "fs",
       "type":"radio",
       "choices": {
-        "p": "Parked<br>",
+        "p": "Parked (No Climb Attempt)<br>",
         "o": "Onstage<br>",
         "s": "Onstage (Spotlit)<br>",
         "h": "Harmony<br>",
-        "a": "Attempted but failed<br>",
-        "x": "Not attempted"
+        "a": "Failed Climb Attempt<br>",
+        "x": "Didn't Park"
       },
       "defaultValue": "x"
     },
