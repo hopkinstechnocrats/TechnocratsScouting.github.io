@@ -83,8 +83,17 @@ var config_data = `
       "code": "tas",
       "type": "counter"
     },
+    { "name": "Amp Misses",
+      "code": "ths",
+      "type": "counter"
+    },
+
     { "name": "Speaker Scores",
       "code": "tss",
+      "type": "counter"
+    },
+    { "name": "Speaker Misses",
+      "code": "tms",
       "type": "counter"
     },
     { "name": "Times Amplified",
