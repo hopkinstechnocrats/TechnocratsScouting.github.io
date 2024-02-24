@@ -148,7 +148,7 @@ var config_data = `
     },
     { "name": "Note in Trap",
       "code": "nit",
-      "type": "bool"
+      "type": "counter"
     }
   ],
   "postmatch": [
