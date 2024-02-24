@@ -71,6 +71,14 @@ var config_data = `
     },
     { "name": "Amp Scores",
       "code": "aas",
+      "type": "counter"  
+    },
+    { "name": "Amp Misses",
+      "code": "oss",
+      "type": "counter"
+    },
+    { "name": "Speaker Misses",
+      "code": "tqs",
       "type": "counter"
     },
     { "name": "Speaker Scores",
@@ -98,6 +106,14 @@ var config_data = `
     },
     { "name": "Times Amplified",
       "code": "tta",
+      "type": "counter"
+    },
+    { "name": "Amplified Speaker Scores",
+      "code": "tds",
+      "type": "counter"
+    },
+    { "name": "Amplified Speaker Misses",
+      "code": "tis",
       "type": "counter"
     },
     { "name": "Pickup From",
