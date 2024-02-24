@@ -84,7 +84,7 @@ var config_data = `
       "type": "counter"
     },
     { "name": "Amp Misses",
-      "code": "ths",
+      "code": "tks",
       "type": "counter"
     },
 
