@@ -77,12 +77,12 @@ var config_data = `
       "code": "oss",
       "type": "counter"
     },
-    { "name": "Speaker Misses",
-      "code": "tqs",
-      "type": "counter"
-    },
     { "name": "Speaker Scores",
       "code": "ass",
+      "type": "counter"
+    },
+    { "name": "Speaker Misses",
+      "code": "tqs",
       "type": "counter"
     }
   ],
