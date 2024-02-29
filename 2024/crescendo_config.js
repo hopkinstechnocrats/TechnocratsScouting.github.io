@@ -156,9 +156,9 @@ var config_data = `
       "code": "ds",
       "type": "radio",
       "choices": {
-        "n": "Not Effective<br>",
-        "a": "Average<br>",
-        "v": "Very Effective<br>",
+        "n": "1(Not Effective)<br>",
+        "a": "2<br>",
+        "v": "3(Very Effective)<br>",
         "x": "Not Observed"
       },
       "defaultValue": "x"
@@ -167,10 +167,9 @@ var config_data = `
       "code": "dr",
       "type": "radio",
       "choices": {
-        "b": "Below Average<br>",
-        "a": "Average<br>",
-        "g": "Good<br>",
-        "e": "Excellent<br>",
+        "b": "1(Below Average)<br>",
+        "a": "2<br>",
+        "e": "3(above average)<br>",
         "x": "Did not play defense"
       },
       "defaultValue": "x"
@@ -180,12 +179,10 @@ var config_data = `
       "type": "radio",
       "choices": {
         "1": "1 (slow)<br>",
-        "2": "2<br>",
-        "3": "3<br>",
-        "4": "4<br>",
-        "5": "5 (fast)"
+        "2": "2",
+        "3": "3 (fast)<br>"
       },
-      "defaultValue":"3"
+      "defaultValue":"2"
     },
     { "name": "Died/Immobilized",
       "code": "die",
