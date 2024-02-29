@@ -184,6 +184,16 @@ var config_data = `
       },
       "defaultValue":"2"
     },
+    { "name": "Note Pickup",
+      "code": "hpr",
+      "type": "radio",
+      "choices": {
+        "1": "1 (slow)<br>",
+        "2": "2<br>",
+        "3": "3 (smooth)"
+      },
+      "defaultValue":"2"
+    },
     { "name": "Died/Immobilized",
       "code": "die",
       "type": "bool"
