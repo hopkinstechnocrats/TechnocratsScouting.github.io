@@ -84,7 +84,7 @@ var config_data = `
     { "name": "Speaker Misses",
       "code": "tqs",
       "type": "counter"
-    },
+    }
   ],
   "teleop": [
     { "name": "Amp Scores",
