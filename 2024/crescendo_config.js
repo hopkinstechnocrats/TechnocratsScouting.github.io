@@ -1,5 +1,4 @@
-var config_data = `
-{
+var config_data = {
   "dataFormat": "tsv",
   "title": "Scouting PASS 2024",
   "page_title": "Technocrats",
@@ -182,7 +181,7 @@ var config_data = `
         "2": "2"<br>",
         "3": "3 (fast)"
       },
-      "defaultValue":"2"
+      "defaultValue": "2"
     },
     { "name": "Died/Immobilized",
       "code": "die",
