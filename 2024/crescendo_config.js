@@ -1,4 +1,3 @@
-
 var config_data = `
 {
   "dataFormat": "tsv",
