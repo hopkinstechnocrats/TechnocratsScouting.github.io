@@ -80,7 +80,7 @@ var config_data = `
     { "name": "Speaker Scores",
       "code": "ass",
       "type": "counter"
-    }
+    },
     { "name": "Speaker Misses",
       "code": "tqs",
       "type": "counter"
