@@ -179,7 +179,7 @@ var config_data = `
       "type": "radio",
       "choices": {
         "1": "1 (slow)<br>",
-        "2": "2"<br>",
+        "2": "2<br>",
         "3": "3 (fast)"
       },
       "defaultValue": "2"
