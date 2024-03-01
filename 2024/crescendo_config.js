@@ -77,7 +77,7 @@ var config_data = `
       "code": "oss",
       "type": "counter"
     },
-    { "name": "Speaker Scores",
+    { "name": "Speaker scores",
       "code": "ass",
       "type": "counter"
     },
