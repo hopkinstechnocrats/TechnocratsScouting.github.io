@@ -182,6 +182,14 @@ var config_data = `
         "2": "2<br>",
         "3": "3 (fast)"
       },
+    { "name": "Note Intake",
+      "code": "gr",
+      "type": "radio",
+      "choices": {
+        "1": "1 (slow)<br>",
+        "2": "2<br>",
+        "3": "3 (smooth)"
+      },
       "defaultValue":"2"
     },
     { "name": "Died/Immobilized",
