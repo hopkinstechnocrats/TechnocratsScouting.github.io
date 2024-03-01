@@ -182,6 +182,7 @@ var config_data = `
         "2": "2<br>",
         "3": "3 (fast)"
       },
+      "defaultValue": "x"
     },
     { "name": "Died/Immobilized",
       "code": "die",
