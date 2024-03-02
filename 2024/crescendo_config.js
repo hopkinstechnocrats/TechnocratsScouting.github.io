@@ -48,7 +48,7 @@ var config_data = `
         "b3": "Blue-3"
       },
       "required":"true"
-    }
+    },
   ],
   "auton": [
     { "name": "Leave Starting Zone",
