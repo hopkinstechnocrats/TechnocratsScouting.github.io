@@ -142,7 +142,8 @@ var config_data = `
         "Onstage": "Onstage<br>",
         "Spotlit": "Onstage (Spotlit)<br>",
         "Harmony": "Harmony<br>",
-        "faildClimb": "Failed Climb Attempt<br>",
+        "HarmonySpotlit": "Harmony+Spotlit<br>",
+        "ClimbFail": "Failed Climb Attempt<br>",
         "NoPark": "Didn't Park"
       },
       "defaultValue": "x"
