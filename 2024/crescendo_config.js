@@ -229,6 +229,7 @@ var config_data = `
         "1": "1 (slow)<br>",
         "2": "2<br>",
         "3": "3 (smooth)"
+        "0": "Did not use Intake"
       },
       "defaultValue":"0"
     }
