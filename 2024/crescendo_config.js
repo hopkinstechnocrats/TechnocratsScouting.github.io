@@ -228,8 +228,7 @@ var config_data = `
       "choices": {
         "1": "1 (slow)<br>",
         "2": "2<br>",
-        "3": "3 (smooth)<br>"
-        "0": "Not Displayed"
+        "3": "3 (smooth)"
       },
       "defaultValue":"0"
     }
