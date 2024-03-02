@@ -178,6 +178,17 @@ var config_data = `
       },
       "defaultValue": "x"
     },
+    { "name": "Defense Evasion Rating",
+      "code": "ldr",
+      "type": "radio",
+      "choices": {
+        "b": "1(Not Effective)<br>",
+        "a": "2<br>",
+        "e": "3(Very Effective)<br>",
+        "x": "Did not encounter defense"
+      },
+      "defaultValue": "x"
+    },
     { "name": "Speed Rating",
       "code": "sr",
       "type": "radio",
@@ -218,8 +229,9 @@ var config_data = `
         "1": "1 (slow)<br>",
         "2": "2<br>",
         "3": "3 (smooth)"
+        "x": "Not Displayed"
       },
-      "defaultValue":"2"
+      "defaultValue":"x"
     }
   ]
 }`;
