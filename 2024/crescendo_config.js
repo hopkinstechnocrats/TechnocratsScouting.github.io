@@ -197,7 +197,7 @@ var config_data = `
         "2": "2<br>",
         "3": "3 (fast)"
       },
-      "defaultValue": "x"
+      "defaultValue": "2"
     },
     { "name": "Died/Immobilized",
       "code": "die",
@@ -231,7 +231,7 @@ var config_data = `
         "3": "3 (smooth)<br>"
         "0": "Not Displayed"
       },
-      "defaultValue":"x"
+      "defaultValue":"0"
     }
   ]
 }`;
