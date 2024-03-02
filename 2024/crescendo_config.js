@@ -57,7 +57,7 @@ var config_data = `
     },
     { "name": "Are you ready?",
       "code": "as",
-      "type": "robot"
+      "type": "robot",
       "choices": {
       "Y": "Yes",
       "Y!": "Yes!:
