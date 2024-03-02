@@ -140,6 +140,10 @@ var config_data = `
       },
       "defaultValue": "x"
     },
+    { "name": "High Notes Landed",
+      "code": "hnt",
+      "type": "counter"
+    },
     { "name": "Note in Trap",
       "code": "nit",
       "type": "counter"
