@@ -138,12 +138,14 @@ var config_data = `
       "code": "fs",
       "type":"radio",
       "choices": {
-        "Parked": "Parked (No Climb Attempt)<br>",
-        "Onstage": "Onstage<br>",
-        "Spotlit": "Onstage (Spotlit)<br>",
-        "Harmony": "Harmony<br>",
-        "HarmonySpotlit": "Harmony+Spotlit<br>",
-        "ClimbFail": "Failed Climb Attempt<br>",
+        "Parked(1)": "Parked (No Climb Attempt)<br>",
+        "Onstage(3)": "Onstage<br>",
+        "Spotlit(4)": "Onstage (Spotlit)<br>",
+        "Harmony(5)": "Harmony(2 bots)<br>",
+        "HarmonySpotlit(6)": "Harmony+Spotlit(2 bots)<br>",
+        "Harmony(5)": "Harmony(3 bots)<br>",
+        "HarmonySpotlit(6)": "Harmony+Spotlit(2 bots)<br>",
+        "ClimbFail(1)": "Failed Climb Attempt<br>",
         "NoPark": "Didn't Park"
       },
       "defaultValue": "x"
