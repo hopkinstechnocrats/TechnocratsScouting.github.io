@@ -229,7 +229,7 @@ var config_data = `
         "1": "1 (slow)<br>",
         "2": "2<br>",
         "3": "3 (smooth)<br>"
-        "x": "Not Displayed"
+        "0": "Not Displayed"
       },
       "defaultValue":"x"
     }
