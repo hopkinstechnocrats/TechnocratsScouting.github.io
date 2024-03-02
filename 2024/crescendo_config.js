@@ -62,6 +62,7 @@ var config_data = `
       "y": "Yes",
       "Y": "Yes!"
      },
+     "required":"false"
     }
   ],
   "auton": [
