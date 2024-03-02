@@ -59,8 +59,8 @@ var config_data = `
       "code": "as",
       "type": "robot",
       "choices": {
-      "Y": "Yes",
-      "Y!": "Yes!:
+      "y": "Yes",
+      "Y": "Yes!"
      },
      "required":"true"
     }
