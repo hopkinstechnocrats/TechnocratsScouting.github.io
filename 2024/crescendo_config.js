@@ -141,8 +141,10 @@ var config_data = `
         "Parked": "Parked (No Climb Attempt)<br>",
         "Onstage": "Onstage<br>",
         "Spotlit": "Onstage (Spotlit)<br>",
-        "Harmony": "Harmony(2 bots)<br>",
-        "Harmony": "Harmony(3 bots)<br>",
+        "Harmony(2)": "Harmony(2 bots)<br>",
+        "Harmony(3)": "Harmony(3 bots)<br>",
+        "Harmony Spotlit(2)": "Harmony+Spotlit(2 bots)<br>"
+        "Harmony Spotlit(3)": "Harmony+Spotlit(3 bots)<br>"
         "ClimbFail": "Failed Climb Attempt<br>",
         "NoPark": "Didn't Park"
       },
