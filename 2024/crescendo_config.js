@@ -142,13 +142,11 @@ var config_data = `
         "Onstage": "Onstage<br>",
         "Spotlit": "Onstage (Spotlit)<br>",
         "Harmony": "Harmony(2 bots)<br>",
-        "HarmonySpotlit": "Harmony+Spotlit(2 bots)<br>",
         "Harmony": "Harmony(3 bots)<br>",
-        "HarmonySpotlit": "Harmony+Spotlit(2 bots)<br>",
         "ClimbFail": "Failed Climb Attempt<br>",
         "NoPark": "Didn't Park"
       },
-      "defaultValue": "x"
+      "defaultValue": "NoPark"
     },
     { "name": "High Notes Landed",
       "code": "hnt",
