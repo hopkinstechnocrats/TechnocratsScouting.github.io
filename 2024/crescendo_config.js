@@ -5,7 +5,7 @@ var config_data = `
   "page_title": "ruh ro",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Scouter Initials",
+    { "name": "scouter Initials",
       "code": "s",
       "type": "scouter",
       "size": 5,
