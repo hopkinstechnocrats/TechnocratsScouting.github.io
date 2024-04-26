@@ -68,7 +68,7 @@ var config_data = `
   "auton": [
     { "name": "Leave Starting Zone",
       "code": "al",
-      "type": "counter"
+      "type": "bool"
     },
     { "name": "Amp Scores",
       "code": "aas",
