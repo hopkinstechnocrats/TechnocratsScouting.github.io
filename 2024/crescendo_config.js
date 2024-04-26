@@ -2,7 +2,7 @@ var config_data = `
 {
   "dataFormat": "tsv",
   "title": "Scouting PASS 2024",
-  "page_title": "Technocrats",
+  "page_title": "ruh ro",
   "checkboxAs": "10",
   "prematch": [
     { "name": "Scouter Initials",
@@ -124,7 +124,8 @@ var config_data = `
         "s": "Source<br>",
         "f": "Floor<br>",
         "b": "Both<br>",
-        "x": "Not Attempted"
+        "x": "Not Attempted<br>"
+        "RRR": "LOSE"
       },
       "defaultValue": "x"
     }
