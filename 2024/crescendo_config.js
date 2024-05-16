@@ -124,8 +124,8 @@ var config_data = `
         "s": "Source<br>",
         "f": "Floor<br>",
         "b": "Both<br>",
-        "x": "Not Attempted<br>"
-        "RRR": "LOSE",
+        "x": "Not Attempted<br>",
+        "RRR": "LOSE"
       },
       "defaultValue": "x"
     }
