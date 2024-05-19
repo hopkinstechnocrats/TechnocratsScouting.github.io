@@ -231,7 +231,7 @@ var config_data = `
       "code": "gr",
       "type": "radio",
       "choices": {
-        "0": "Did not use Intake<br>"
+        "0": "Did not use Intake<br>",
         "1": "1 (slow)<br>",
         "2": "2<br>",
         "3": "3 (smooth)"
