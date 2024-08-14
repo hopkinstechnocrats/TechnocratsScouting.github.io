@@ -1,8 +1,8 @@
 var config_data = `
 {
   "dataFormat": "tsv",
-  "title": "TESTING",
-  "page_title": "ruh ro",
+  "title": "ScoutingPass2024",
+  "page_title": "TESTING",
   "checkboxAs": "10",
   "prematch": [
     { "name": "scouter Initials",
