@@ -1,7 +1,7 @@
 var config_data = `
 {
-  "dataFormat": "tsv"
-  "title": "Scouting PASS 2024",
+  "dataFormat": "tsv",
+  "title": "TESTING",
   "page_title": "ruh ro",
   "checkboxAs": "10",
   "prematch": [
