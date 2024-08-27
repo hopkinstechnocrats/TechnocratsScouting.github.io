@@ -2,7 +2,7 @@ var config_data = `
 {
   "dataFormat": "tsv",
   "title": "ScoutingPass2024",
-    "page_title": "Test",
+    "page_title": "practice",
   "checkboxAs": "10",
   "prematch": [
     { "name": "scouter Initials",
