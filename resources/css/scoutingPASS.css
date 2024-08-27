@@ -87,10 +87,10 @@ html, body{
 }
 
 #prematch{
-    display: table;
 }
 
 #auton{
+    display: table;
 }
 
 #teleop{
