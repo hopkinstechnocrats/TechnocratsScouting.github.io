@@ -1,11 +1,11 @@
 var config_data = `
 {
   "dataFormat": "tsv",
-  "title": "ScoutingPass2024",
-    "page_title": "practice",
+  "title": "Scouting PASS 2024",
+  "page_title": "Crescendo",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "scouter Initials",
+    { "name": "Scouter Initials",
       "code": "s",
       "type": "scouter",
       "size": 5,
@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2024mndu",
+      "defaultValue": "2023tnkn",
       "required": "true"
     },
     { "name": "Match Level",
@@ -55,35 +55,26 @@ var config_data = `
       "min": 1,
       "max": 99999
     },
-    { "name": "Are you ready?",
+    { "name": "Auto Start Position",
       "code": "as",
-      "type": "robot",
-      "choices": {
-      "y": "Yes",
-      "Y": "Yes!"
-     },
-     "required": "true"
+      "type": "clickable_image",
+      "filename": "2024/field_image.png",
+      "clickRestriction": "one",
+      "allowableResponses": "1 12 13 24 25 36 37 48 49 60 61 72",
+      "shape": "circle 5 black red true"
     }
   ],
   "auton": [
     { "name": "Leave Starting Zone",
       "code": "al",
-      "type": "counter"
+      "type": "bool"
     },
     { "name": "Amp Scores",
       "code": "aas",
-      "type": "counter"  
-    },
-    { "name": "Amp Misses",
-      "code": "oss",
       "type": "counter"
     },
-    { "name": "Speaker scores",
+    { "name": "Speaker Scores",
       "code": "ass",
-      "type": "counter"
-    },
-    { "name": "Speaker Misses",
-      "code": "tqs",
       "type": "counter"
     }
   ],
@@ -92,29 +83,12 @@ var config_data = `
       "code": "tas",
       "type": "counter"
     },
-    { "name": "Amp Misses",
-      "code": "tks",
-      "type": "counter"
-    },
-
     { "name": "Speaker Scores",
       "code": "tss",
       "type": "counter"
     },
-    { "name": "Speaker Misses",
-      "code": "tms",
-      "type": "counter"
-    },
     { "name": "Times Amplified",
       "code": "tta",
-      "type": "counter"
-    },
-    { "name": "Amplified Speaker Scores",
-      "code": "tds",
-      "type": "counter"
-    },
-    { "name": "Amplified Speaker Misses",
-      "code": "tis",
       "type": "counter"
     },
     { "name": "Pickup From",
@@ -124,8 +98,7 @@ var config_data = `
         "s": "Source<br>",
         "f": "Floor<br>",
         "b": "Both<br>",
-        "x": "Not Attempted<br>",
-        "RRR": "LOSE"
+        "x": "Not Attempted"
       },
       "defaultValue": "x"
     }
@@ -139,25 +112,18 @@ var config_data = `
       "code": "fs",
       "type":"radio",
       "choices": {
-        "Parked": "Parked (No Climb Attempt)<br>",
-        "Onstage": "Onstage<br>",
-        "Spotlit": "Onstage (Spotlit)<br>",
-        "Harmony(2)": "Harmony(2 bots)<br>",
-        "Harmony(3)": "Harmony(3 bots)<br>",
-        "Harmony Spotlit(2)": "Harmony+Spotlit(2 bots)<br>",
-        "Harmony Spotlit(3)": "Harmony+Spotlit(3 bots)<br>",
-        "ClimbFail": "Failed Climb Attempt<br>",
-        "NoPark": "Didn't Park"
+        "p": "Parked<br>",
+        "o": "Onstage<br>",
+        "s": "Onstage (Spotlit)<br>",
+        "h": "Harmony<br>",
+        "a": "Attempted but failed<br>",
+        "x": "Not attempted"
       },
-      "defaultValue": "NoPark"
-    },
-    { "name": "High Notes Landed",
-      "code": "hnt",
-      "type": "counter"
+      "defaultValue": "x"
     },
     { "name": "Note in Trap",
       "code": "nit",
-      "type": "counter"
+      "type": "bool"
     }
   ],
   "postmatch": [
@@ -165,9 +131,9 @@ var config_data = `
       "code": "ds",
       "type": "radio",
       "choices": {
-        "n": "1(Not Effective)<br>",
-        "a": "2<br>",
-        "v": "3(Very Effective)<br>",
+        "n": "Not Effective<br>",
+        "a": "Average<br>",
+        "v": "Very Effective<br>",
         "x": "Not Observed"
       },
       "defaultValue": "x"
@@ -176,21 +142,11 @@ var config_data = `
       "code": "dr",
       "type": "radio",
       "choices": {
-        "b": "1(Below Average)<br>",
-        "a": "2<br>",
-        "e": "3(above average)<br>",
+        "b": "Below Average<br>",
+        "a": "Average<br>",
+        "g": "Good<br>",
+        "e": "Excellent<br>",
         "x": "Did not play defense"
-      },
-      "defaultValue": "x"
-    },
-    { "name": "Defense Evasion Rating",
-      "code": "ldr",
-      "type": "radio",
-      "choices": {
-        "b": "1(Not Effective)<br>",
-        "a": "2<br>",
-        "e": "3(Very Effective)<br>",
-        "x": "Did not encounter defense"
       },
       "defaultValue": "x"
     },
@@ -200,9 +156,11 @@ var config_data = `
       "choices": {
         "1": "1 (slow)<br>",
         "2": "2<br>",
-        "3": "3 (fast)"
+        "3": "3<br>",
+        "4": "4<br>",
+        "5": "5 (fast)"
       },
-      "defaultValue": "2"
+      "defaultValue":"3"
     },
     { "name": "Died/Immobilized",
       "code": "die",
@@ -226,17 +184,6 @@ var config_data = `
       "type": "text",
       "size": 15,
       "maxSize": 55
-    },
-    { "name": "Note Intake",
-      "code": "gr",
-      "type": "radio",
-      "choices": {
-        "0": "Did not use Intake<br>",
-        "1": "1 (slow)<br>",
-        "2": "2<br>",
-        "3": "3 (smooth)"
-      },
-      "defaultValue":"0"
     }
   ]
 }`;
