@@ -119,7 +119,7 @@ h1{
 }
 
 #page2, #page4 {
-    color: blue;
+    color: black;
 }
 
 h2{
@@ -199,7 +199,7 @@ h2{
 h1 .odd {
     font-family: Alexis;
     text-align: center;
-    color: #F44336;
+    color: #0AB4EC;
 }
 
 h1 .even {
