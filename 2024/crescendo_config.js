@@ -73,7 +73,7 @@ var config_data = `
       "code": "aas",
       "type": "counter"
     },
-    { "name": "Amp Misses"
+    { "name": "Amp Misses",
       "code": "fad",
       "type": "counter"
     },
@@ -91,7 +91,7 @@ var config_data = `
       "code": "tas",
       "type": "counter"
     },
-    { "name": "Amp Misses"
+    { "name": "Amp Misses",
       "code": "fad",
       "type": "counter"
     },
