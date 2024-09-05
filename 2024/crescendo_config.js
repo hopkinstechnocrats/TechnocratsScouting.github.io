@@ -73,8 +73,16 @@ var config_data = `
       "code": "aas",
       "type": "counter"
     },
+    { "name": "Amp Misses"
+      "code": "fad",
+      "type": "counter"
+    },
     { "name": "Speaker Scores",
       "code": "ass",
+      "type": "counter"
+    },
+    {"name": "Speaker Misses",
+      "code": "gas",
       "type": "counter"
     }
   ],
@@ -83,12 +91,24 @@ var config_data = `
       "code": "tas",
       "type": "counter"
     },
+    { "name": "Amp Misses"
+      "code": "fad",
+      "type": "counter"
+    },
     { "name": "Speaker Scores",
       "code": "tss",
       "type": "counter"
     },
-    { "name": "Times Amplified",
+    {"name": "Speaker Misses",
+      "code": "gas",
+      "type": "counter"
+    },
+    { "name": "Amped Speaker Shots",
       "code": "tta",
+      "type": "counter"
+    },
+    { "name": "Amped Speaker Misses",
+      "code": "tla",
       "type": "counter"
     },
     { "name": "Pickup From",
