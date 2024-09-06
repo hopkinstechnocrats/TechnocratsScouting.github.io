@@ -113,14 +113,10 @@ var config_data = `
     },
     { "name": "Coopertition Bonus",
       "code": "jsd",
-      "type": "boolean"
+      "type": "bool"
     }
   ],
   "endgame": [
-    { "name": "Stage Timer",
-      "code": "dt",
-      "type": "timer"
-    },
     { "name": "Final Status",
       "code": "fs",
       "type":"radio",
