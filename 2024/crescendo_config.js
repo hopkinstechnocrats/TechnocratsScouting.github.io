@@ -1,11 +1,13 @@
 var config_data = `
 {
+  "enable_google_sheets": "true",
   "dataFormat": "tsv",
   "title": "Scouting PASS 2024",
   "page_title": "Crescendo",
   "checkboxAs": "10",
   "prematch": [
     { "name": "Scouter Initials",
+      "gsCol": "s",
       "code": "s",
       "type": "scouter",
       "size": 5,
