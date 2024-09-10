@@ -1,5 +1,6 @@
 var config_data = `
 {
+  "enable_google_sheets": "true",
   "dataFormat": "tsv",
   "title": "Scouting PASS 2024",
   "page_title": "Crescendo",
@@ -54,14 +55,6 @@ var config_data = `
       "type": "team",
       "min": 1,
       "max": 99999
-    },
-    { "name": "Auto Start Position",
-      "code": "as",
-      "type": "clickable_image",
-      "filename": "2024/field_image.png",
-      "clickRestriction": "one",
-      "allowableResponses": "1 12 13 24 25 36 37 48 49 60 61 72",
-      "shape": "circle 5 black red true"
     }
   ],
   "auton": [
@@ -73,8 +66,16 @@ var config_data = `
       "code": "aas",
       "type": "counter"
     },
+    { "name": "Amp Misses",
+      "code": "fad",
+      "type": "counter"
+    },
     { "name": "Speaker Scores",
       "code": "ass",
+      "type": "counter"
+    },
+    {"name": "Speaker Misses",
+      "code": "gas",
       "type": "counter"
     }
   ],
@@ -83,47 +84,42 @@ var config_data = `
       "code": "tas",
       "type": "counter"
     },
+    { "name": "Amp Misses",
+      "code": "fad",
+      "type": "counter"
+    },
     { "name": "Speaker Scores",
       "code": "tss",
       "type": "counter"
     },
-    { "name": "Times Amplified",
+    {"name": "Speaker Misses",
+      "code": "gas",
+      "type": "counter"
+    },
+    { "name": "Amped Speaker Shots",
       "code": "tta",
       "type": "counter"
     },
-    { "name": "Pickup From",
-      "code": "tpu",
-      "type": "radio",
-      "choices": {
-        "s": "Source<br>",
-        "f": "Floor<br>",
-        "b": "Both<br>",
-        "x": "Not Attempted"
-      },
-      "defaultValue": "x"
+    { "name": "Amped Speaker Misses",
+      "code": "tla",
+      "type": "counter"
+    },
+    { "name": "Coopertition Bonus",
+      "code": "jsd",
+      "type": "bool"
     }
   ],
   "endgame": [
-    { "name": "Stage Timer",
-      "code": "dt",
-      "type": "timer"
-    },
     { "name": "Final Status",
       "code": "fs",
       "type":"radio",
       "choices": {
         "p": "Parked<br>",
-        "o": "Onstage<br>",
-        "s": "Onstage (Spotlit)<br>",
-        "h": "Harmony<br>",
-        "a": "Attempted but failed<br>",
-        "x": "Not attempted"
+        "c": "Climbed<br>",
+        "f": "Failed Climb<br>",
+        "n": "Nothing"
       },
       "defaultValue": "x"
-    },
-    { "name": "Note in Trap",
-      "code": "nit",
-      "type": "bool"
     }
   ],
   "postmatch": [
@@ -131,10 +127,12 @@ var config_data = `
       "code": "ds",
       "type": "radio",
       "choices": {
-        "n": "Not Effective<br>",
-        "a": "Average<br>",
-        "v": "Very Effective<br>",
-        "x": "Not Observed"
+        "v": "5(Very Effective)<br>",
+        "t": "4<br>",
+        "a": "3(Average)<br>",
+        "g": "2<br>",
+        "n": "1(Not Effective)<br>",
+        "x": "0(Not Observed)"
       },
       "defaultValue": "x"
     },
@@ -142,11 +140,12 @@ var config_data = `
       "code": "dr",
       "type": "radio",
       "choices": {
-        "b": "Below Average<br>",
-        "a": "Average<br>",
-        "g": "Good<br>",
-        "e": "Excellent<br>",
-        "x": "Did not play defense"
+        "v": "5(Very Effective)<br>",
+        "t": "4<br>",
+        "a": "3(Average)<br>",
+        "g": "2<br>",
+        "n": "1(Not Effective)<br>",
+        "x": "0(Not Observed)"
       },
       "defaultValue": "x"
     },
@@ -154,13 +153,14 @@ var config_data = `
       "code": "sr",
       "type": "radio",
       "choices": {
-        "1": "1 (slow)<br>",
-        "2": "2<br>",
-        "3": "3<br>",
-        "4": "4<br>",
-        "5": "5 (fast)"
+        "v": "5(Very Effective)<br>",
+        "t": "4<br>",
+        "a": "3(Average)<br>",
+        "g": "2<br>",
+        "n": "1(Not Effective)<br>",
+        "x": "0(Not Observed)"
       },
-      "defaultValue":"3"
+      "defaultValue":"x"
     },
     { "name": "Died/Immobilized",
       "code": "die",
@@ -168,10 +168,6 @@ var config_data = `
     },
     { "name": "Tippy<br>(almost tipped over)",
       "code": "tip",
-      "type": "bool"
-    },
-    { "name": "Dropped Notes (>2)",
-      "code": "dn",
       "type": "bool"
     },
     { "name": "Make good<br>alliance partner?",
