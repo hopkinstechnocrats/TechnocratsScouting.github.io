@@ -85,7 +85,7 @@ var config_data = `
       "type": "counter"
     },
     { "name": "Amp Misses",
-      "code": "fad",
+      "code": "fpd",
       "type": "counter"
     },
     { "name": "Speaker Scores",
@@ -93,7 +93,7 @@ var config_data = `
       "type": "counter"
     },
     {"name": "Speaker Misses",
-      "code": "gas",
+      "code": "gds",
       "type": "counter"
     },
     { "name": "Amped Speaker Shots",
