@@ -7,7 +7,6 @@ var config_data = `
   "checkboxAs": "10",
   "prematch": [
     { "name": "Scouter Initials",
-      "gsCol": "s",
       "code": "s",
       "type": "scouter",
       "size": 5,
@@ -22,6 +21,7 @@ var config_data = `
     },
     { "name": "Match Level",
       "code": "l",
+      "gsCol": "l",
       "type": "level",
       "choices": {
         "qm": "Quals<br>",
