@@ -123,44 +123,44 @@ var config_data = `
     }
   ],
   "postmatch": [
-    { "name": "Driver Skill",
+    { "name": "Driver Rating",
       "code": "ds",
       "type": "radio",
       "choices": {
-        "v": "5(Very Effective)<br>",
-        "t": "4<br>",
-        "a": "3(Average)<br>",
-        "g": "2<br>",
-        "n": "1(Not Effective)<br>",
-        "x": "0(Not Observed)"
+        "5": "5(Very Effective)<br>",
+        "4": "4<br>",
+        "3": "3(Average)<br>",
+        "2": "2<br>",
+        "1": "1(Not Effective)<br>",
+        "0": "0(Not Observed)"
       },
-      "defaultValue": "x"
+      "defaultValue": "0"
     },
     { "name": "Defense Rating",
       "code": "dr",
       "type": "radio",
       "choices": {
-        "v": "5(Very Effective)<br>",
-        "t": "4<br>",
-        "a": "3(Average)<br>",
-        "g": "2<br>",
-        "n": "1(Not Effective)<br>",
-        "x": "0(Not Observed)"
+        "5": "5(Very Effective)<br>",
+        "4": "4<br>",
+        "3": "3(Average)<br>",
+        "2": "2<br>",
+        "1": "1(Not Effective)<br>",
+        "0": "0(Not Observed)"
       },
-      "defaultValue": "x"
+      "defaultValue": "0"
     },
     { "name": "Speed Rating",
       "code": "sr",
       "type": "radio",
       "choices": {
-        "v": "5(Very Effective)<br>",
-        "t": "4<br>",
-        "a": "3(Average)<br>",
-        "g": "2<br>",
-        "n": "1(Not Effective)<br>",
-        "x": "0(Not Observed)"
+        "5": "5(Very Effective)<br>",
+        "4": "4<br>",
+        "3": "3(Average)<br>",
+        "2": "2<br>",
+        "1": "1(Not Effective)<br>",
+        "0": "0(Not Observed)"
       },
-      "defaultValue":"x"
+      "defaultValue":"0"
     },
     { "name": "Died/Immobilized",
       "code": "die",
