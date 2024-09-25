@@ -8,6 +8,7 @@ var config_data = `
   "prematch": [
     { "name": "Scouter Initials",
       "code": "s",
+      "gsCol": "ScouterInitials",
       "type": "scouter",
       "size": 5,
       "maxSize": 5,
@@ -15,12 +16,14 @@ var config_data = `
     },
     { "name": "Event",
       "code": "e",
+      "gsCol": "EventCode",
       "type": "event",
       "defaultValue": "2023tnkn",
       "required": "true"
     },
     { "name": "Match Level",
       "code": "l",
+      "gsCol": "MatchLevel",
       "type": "level",
       "choices": {
         "qm": "Quals<br>",
@@ -32,6 +35,7 @@ var config_data = `
     },
     { "name": "Match #",
       "code": "m",
+      "gsCol": "Match#",
       "type": "match",
       "min": 1,
       "max": 150,
@@ -39,6 +43,7 @@ var config_data = `
     },
     { "name": "Robot",
       "code": "r",
+      "gsCol": "Robot#",
       "type": "robot",
       "choices": {
         "r1": "Red-1",
@@ -52,6 +57,7 @@ var config_data = `
     },
     { "name": "Team #",
       "code": "t",
+      "gsCol": "Team#",
       "type": "team",
       "min": 1,
       "max": 99999
@@ -60,58 +66,71 @@ var config_data = `
   "auton": [
     { "name": "Leave Starting Zone",
       "code": "al",
+      "gsCol": "LeaveStartZone",
       "type": "bool"
     },
     { "name": "Amp Scores",
       "code": "aas",
+      "gsCol": "AmpScoresAuto",
       "type": "counter"
     },
     { "name": "Amp Misses",
       "code": "fad",
+      "gsCol": "AmpMissesAuto",
       "type": "counter"
     },
     { "name": "Speaker Scores",
       "code": "ass",
+      "gsCol": "SpeakerScoresAuto",
       "type": "counter"
     },
     {"name": "Speaker Misses",
       "code": "gas",
+      "gsCol": "SpeakerMissesAuto",
       "type": "counter"
     }
   ],
   "teleop": [
     { "name": "Amp Scores",
       "code": "tas",
+      "gsCol": "AmpScoresTeleop",
       "type": "counter"
     },
     { "name": "Amp Misses",
       "code": "fad",
+      "gsCol": "AmpMissesTeleop",
       "type": "counter"
     },
     { "name": "Speaker Scores",
       "code": "tss",
+      "gsCol": "SpeakerScoresTeleop",
       "type": "counter"
     },
     {"name": "Speaker Misses",
       "code": "gas",
+      "gsCol": "SpeakerMissesTeleop",
       "type": "counter"
     },
     { "name": "Amped Speaker Shots",
       "code": "tta",
+      "gsCol": "AmpedSpeakerShots",
       "type": "counter"
     },
     { "name": "Amped Speaker Misses",
       "code": "tla",
+      "gsCol": "AmpedSpeakerMisses",
       "type": "counter"
     },
     { "name": "Coopertition Bonus",
       "code": "jsd",
+      "gsCol": "CoopertitionBonus",
       "type": "bool"
     }
   ],
   "endgame": [
     { "name": "Final Status",
       "code": "fs",
+      "gsCol": "FinalStatus",
       "type":"radio",
       "choices": {
         "p": "Parked<br>",
@@ -125,6 +144,7 @@ var config_data = `
   "postmatch": [
     { "name": "Driver Skill",
       "code": "ds",
+      "gsCol": "DriverSkill",
       "type": "radio",
       "choices": {
         "v": "5(Very Effective)<br>",
@@ -138,6 +158,7 @@ var config_data = `
     },
     { "name": "Defense Rating",
       "code": "dr",
+      "gsCol": "DefenseRating",
       "type": "radio",
       "choices": {
         "v": "5(Very Effective)<br>",
@@ -151,6 +172,7 @@ var config_data = `
     },
     { "name": "Speed Rating",
       "code": "sr",
+      "gsCol": "SpeedRating",
       "type": "radio",
       "choices": {
         "v": "5(Very Effective)<br>",
@@ -164,19 +186,23 @@ var config_data = `
     },
     { "name": "Died/Immobilized",
       "code": "die",
+      "gsCol": "Died/Immobilized",
       "type": "bool"
     },
     { "name": "Tippy<br>(almost tipped over)",
       "code": "tip",
+      "gsCol": "Tippy",
       "type": "bool"
     },
     { "name": "Make good<br>alliance partner?",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
       "code": "all",
+      "gsCol": "MakeGoodPartner",
       "type": "bool"
     },
     { "name": "Comments",
       "code": "co",
+      "gsCol": "Comment",
       "type": "text",
       "size": 15,
       "maxSize": 55
