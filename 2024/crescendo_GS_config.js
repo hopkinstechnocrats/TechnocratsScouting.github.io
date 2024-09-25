@@ -8,7 +8,7 @@ var config_data = `
   "prematch": [
     { "name": "Scouter Initials",
       "code": "s",
-      "gsCol": "ScouterInitials",
+      "gsCol": "S",
       "type": "scouter",
       "size": 5,
       "maxSize": 5,
@@ -16,14 +16,14 @@ var config_data = `
     },
     { "name": "Event",
       "code": "e",
-      "gsCol": "EventCode",
+      "gsCol": "E",
       "type": "event",
       "defaultValue": "2023tnkn",
       "required": "true"
     },
     { "name": "Match Level",
       "code": "l",
-      "gsCol": "MatchLevel",
+      "gsCol": "L",
       "type": "level",
       "choices": {
         "qm": "Quals<br>",
@@ -35,7 +35,7 @@ var config_data = `
     },
     { "name": "Match #",
       "code": "m",
-      "gsCol": "Match#",
+      "gsCol": "M",
       "type": "match",
       "min": 1,
       "max": 150,
@@ -43,7 +43,7 @@ var config_data = `
     },
     { "name": "Robot",
       "code": "r",
-      "gsCol": "Robot#",
+      "gsCol": "R",
       "type": "robot",
       "choices": {
         "r1": "Red-1",
@@ -57,7 +57,7 @@ var config_data = `
     },
     { "name": "Team #",
       "code": "t",
-      "gsCol": "Team#",
+      "gsCol": "T",
       "type": "team",
       "min": 1,
       "max": 99999
