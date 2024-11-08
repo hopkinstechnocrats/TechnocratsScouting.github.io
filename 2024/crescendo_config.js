@@ -127,7 +127,7 @@ var config_data = `
         "1": "1(Not Effective)<br>",
         "x": "0(Not Observed)"
       },
-      "defaultValue": "x"
+      "defaultValue": "0"
     },
     { "name": "Driver Skill",
       "code": "DriverSkillInMatch",
@@ -140,7 +140,7 @@ var config_data = `
         "1": "1(Not Effective)<br>",
         "x": "0(Not Observed)"
       },
-      "defaultValue": "x"
+      "defaultValue": "0"
     },
     { "name": "Speed Rating",
       "code": "SpeedRatingInMatch",
@@ -153,7 +153,7 @@ var config_data = `
         "1": "1(Not Effective)<br>",
         "x": "0(Not Observed)"
       },
-      "defaultValue":"x"
+      "defaultValue":"0"
     },
     {"name": "Excessive Net Hits(3+)",
     "code": "RobotHitTheNetExcessively",
