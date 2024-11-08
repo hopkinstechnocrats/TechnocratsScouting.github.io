@@ -38,7 +38,7 @@ html, body{
 }
 
 .button {
-    font-family: Alexis;
+    font-family: arial;
     font-size: 160px;
 }
 
@@ -113,7 +113,7 @@ h1{
     border-style: groove;
     border-color: white;
     border-width: 2px;
-    font-size: 40px;
+    font-size: 70px;
     padding: 10px;
     font-weight: 350;
 }
@@ -125,7 +125,7 @@ h1{
 h2{
     font-family: Alexis;
     text-align: center;
-    font-size: 30px;
+    font-size: 55px;
     font-weight: 300;
     font-style: italic;
 }
@@ -155,7 +155,8 @@ h2{
 
 #nextButton1, #nextButton2, #nextButton9, #nextButton10, .clearForm, .submitForm, #displayButton, #copyButton {
     font-family: Alexis;
-    padding: 10px;
+    font-size: 35px;
+    padding: 40px 50px;
     background-color: rgb(151, 199, 240);
     text-decoration: none;
     display: inline-block;
@@ -163,29 +164,33 @@ h2{
 
 #nextButton3, #nextButton4, #nextButton5, #nextButton6, #nextButton7, #nextButton8 {
     font-family: Alexis;
+    font-size: 35px;
     background-color: black;
-    padding: 10px;
+    padding: 40px 50px;
     color: white;
 }
 
 .undoButton, .flipButton {
     font-family: Alexis;
+    font-size: 35px;
     background-color: black;
-    padding: 10px;
+    padding: 40px 50px;
     color: white;
     margin-left: 20px;
 }
 
 #prevButton7, #prevButton8, #prevButton9{
     font-family: Alexis;
+    font-size: 35px;
     background-color: rgb(151, 199, 240);
-    padding: 10px;
+    padding: 40px 50px;
 }
 
 #prevButton1, #prevButton2, #prevButton3, #prevButton4, #prevButton5, #prevButton6{
     font-family: Alexis;
+    font-size: 35px;
     background-color: black;
-    padding: 10px;
+    padding: 40px 50px;
     color: white;
 
 }
@@ -214,11 +219,11 @@ table {
 }
 
 td {
-    padding: 10px 4px;
+    padding: 15px 10px;
 }
 
 input {
-    font-size: 16px;
+    font-size: 25px;
     font: roboto;
     color: black;
     background-color: white;

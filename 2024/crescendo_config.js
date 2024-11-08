@@ -1,9 +1,8 @@
 var config_data = `
 {
-  "enable_google_sheets": "true",
   "dataFormat": "tsv",
   "title": "Scouting PASS 2024",
-  "page_title": "Crescendo",
+  "page_title": "Beach Bash",
   "checkboxAs": "10",
   "prematch": [
     { "name": "Scouter Initials",
@@ -16,17 +15,16 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2023tnkn",
+      "defaultValue": "2025Minne",
       "required": "true"
     },
     { "name": "Match Level",
-      "code": "l",
-      "type": "level",
-      "choices": {
-        "qm": "Quals<br>",
-        "sf": "Semifinals<br>",
-        "f": "Finals"
-      },
+    "code": "l",
+    "type": "level",
+    "choices": {
+      "qm": "Quals<br>",
+      "pl": "Playoffs"
+    },
       "defaultValue": "qm",
       "required": "true"
     },
@@ -41,12 +39,17 @@ var config_data = `
       "code": "r",
       "type": "robot",
       "choices": {
-        "r1": "Red-1",
-        "b1": "Blue-1<br>",
-        "r2": "Red-2",
-        "b2": "Blue-2<br>",
-        "r3": "Red-3",
-        "b3": "Blue-3"
+        "2129": "2129<br>",
+        "2239(tau-cans)": "Team 2239(tau-cans)<br>",
+        "2239(phi-nixes)": "Team 2239(phi-nixes)<br>",
+        "2450": "Team 2450<br>",
+        "2491": "Team 2491<br>",
+        "2502(A)": "Team 2502(A)<br>",
+        "2502(B)": "Team 2502(B)<br>",
+        "2502(C)": "Team 2502(C)<br>",
+        "2549": "Team 2549<br>",
+        "7850": "Team 7850<br>",
+        "9157": "Team 9157<br>"
       },
       "required":"true"
     },
@@ -59,72 +62,62 @@ var config_data = `
   ],
   "auton": [
     { "name": "Leave Starting Zone",
-      "code": "al",
+      "code": "AutoLeaveStartZone",
       "type": "bool"
     },
-    { "name": "Amp Scores",
-      "code": "aas",
+    { "name": "Net Scores",
+      "code": "NetScoresAuto",
       "type": "counter"
     },
-    { "name": "Amp Misses",
-      "code": "fad",
+    { "name": "Net Misses",
+      "code": "NetMissesAuto",
       "type": "counter"
     },
-    { "name": "Speaker Scores",
-      "code": "ass",
+    { "name": "Hoop Scores",
+      "code": "HoopScoresAuto",
       "type": "counter"
     },
-    {"name": "Speaker Misses",
-      "code": "gas",
+    {"name": "Hoops Misses",
+      "code": "HoopMissesAuto",
       "type": "counter"
     }
   ],
   "teleop": [
-    { "name": "Amp Scores",
-      "code": "tas",
+    { "name": "Net Scores",
+      "code": "NetScoresTele",
       "type": "counter"
     },
-    { "name": "Amp Misses",
-      "code": "fpd",
+    { "name": "Net Misses",
+      "code": "NetMissesTele",
       "type": "counter"
     },
-    { "name": "Speaker Scores",
-      "code": "tss",
+    { "name": "Hoop Scores",
+      "code": "HoopScoresTele",
       "type": "counter"
     },
-    {"name": "Speaker Misses",
-      "code": "gds",
+    {"name": "Hoops Misses",
+      "code": "HoopMissesTele",
       "type": "counter"
-    },
-    { "name": "Amped Speaker Shots",
-      "code": "tta",
-      "type": "counter"
-    },
-    { "name": "Amped Speaker Misses",
-      "code": "tla",
-      "type": "counter"
-    },
-    { "name": "Coopertition Bonus",
-      "code": "jsd",
-      "type": "bool"
     }
   ],
+
   "endgame": [
-    { "name": "Final Status",
-      "code": "fs",
-      "type":"radio",
-      "choices": {
-        "p": "Parked<br>",
-        "c": "Climbed<br>",
-        "f": "Failed Climb<br>",
-        "n": "Nothing"
-      },
-      "defaultValue": "x"
+    {"name": "End in Start Zone",
+    "code": "EndedInStartZoneEndGame",
+    "type": "bool"
+    },
+    {"name": "Sharks Collected",
+    "code": "SharksCollectedTotal",
+    "type": "counter"
     }
   ],
   "postmatch": [
-    { "name": "Driver Rating",
-      "code": "ds",
+    {"name": "Played Heavy Defense",
+    "code": "RobotPlayedHeavyDefenseInMatch",
+    "type": "bool"
+    },
+    { "name": "Defense Rating",
+      "code": "DriverRatingInMatch",
       "type": "radio",
       "choices": {
         "5": "5(Very Effective)<br>",
@@ -132,12 +125,12 @@ var config_data = `
         "3": "3(Average)<br>",
         "2": "2<br>",
         "1": "1(Not Effective)<br>",
-        "0": "0(Not Observed)"
+        "x": "0(Not Observed)"
       },
       "defaultValue": "0"
     },
-    { "name": "Defense Rating",
-      "code": "dr",
+    { "name": "Driver Skill",
+      "code": "DriverSkillInMatch",
       "type": "radio",
       "choices": {
         "5": "5(Very Effective)<br>",
@@ -145,12 +138,12 @@ var config_data = `
         "3": "3(Average)<br>",
         "2": "2<br>",
         "1": "1(Not Effective)<br>",
-        "0": "0(Not Observed)"
+        "x": "0(Not Observed)"
       },
       "defaultValue": "0"
     },
     { "name": "Speed Rating",
-      "code": "sr",
+      "code": "SpeedRatingInMatch",
       "type": "radio",
       "choices": {
         "5": "5(Very Effective)<br>",
@@ -158,28 +151,37 @@ var config_data = `
         "3": "3(Average)<br>",
         "2": "2<br>",
         "1": "1(Not Effective)<br>",
-        "0": "0(Not Observed)"
+        "x": "0(Not Observed)"
       },
       "defaultValue":"0"
     },
+    {"name": "Excessive Net Hits(3+)",
+    "code": "RobotHitTheNetExcessively",
+    "type": "bool"
+    },
+    {"name": "Excessive Shots Out of Starting Zone(4+)",
+    "code": "RobotShotFromTheStartZoneExcessively",
+    "type": "bool"
+    },
     { "name": "Died/Immobilized",
-      "code": "die",
+      "code": "RobotDiedInMatch",
       "type": "bool"
     },
     { "name": "Tippy<br>(almost tipped over)",
-      "code": "tip",
+      "code": "RobotWasTippyInMatch",
       "type": "bool"
     },
     { "name": "Make good<br>alliance partner?",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
-      "code": "all",
+      "code": "RobotWouldMakeGoodPartner",
       "type": "bool"
     },
     { "name": "Comments",
-      "code": "co",
+      "code": "CommentsAboutRobotFromMatch",
       "type": "text",
       "size": 15,
       "maxSize": 55
     }
   ]
 }`;
+
