@@ -125,7 +125,7 @@ var config_data = `
         "3": "3(Average)<br>",
         "2": "2<br>",
         "1": "1(Not Effective)<br>",
-        "x": "0(Not Observed)"
+        "0": "0(Not Observed)"
       },
       "defaultValue": "0"
     },
@@ -138,7 +138,7 @@ var config_data = `
         "3": "3(Average)<br>",
         "2": "2<br>",
         "1": "1(Not Effective)<br>",
-        "x": "0(Not Observed)"
+        "0": "0(Not Observed)"
       },
       "defaultValue": "0"
     },
@@ -151,7 +151,7 @@ var config_data = `
         "3": "3(Average)<br>",
         "2": "2<br>",
         "1": "1(Not Effective)<br>",
-        "x": "0(Not Observed)"
+        "0": "0(Not Observed)"
       },
       "defaultValue":"0"
     },
