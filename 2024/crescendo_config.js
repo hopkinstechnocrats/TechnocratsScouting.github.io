@@ -40,13 +40,13 @@ var config_data = `
       "type": "robot",
       "choices": {
         "2129": "2129<br>",
-        "2239(tau-cans)": "Team 2239(tau-cans)<br>",
-        "2239(phi-nixes)": "Team 2239(phi-nixes)<br>",
+        "2239.1": "Team 2239(tau-cans)<br>",
+        "2239.2": "Team 2239(phi-nixes)<br>",
         "2450": "Team 2450<br>",
         "2491": "Team 2491<br>",
-        "2502(A)": "Team 2502(A)<br>",
-        "2502(B)": "Team 2502(B)<br>",
-        "2502(C)": "Team 2502(C)<br>",
+        "2502.1": "Team 2502(A)<br>",
+        "2502.2": "Team 2502(B)<br>",
+        "2502.3": "Team 2502(C)<br>",
         "2549": "Team 2549<br>",
         "7850": "Team 7850<br>",
         "9157": "Team 9157<br>"
@@ -120,12 +120,12 @@ var config_data = `
       "code": "DriverRatingInMatch",
       "type": "radio",
       "choices": {
-        "5": "5(Very Effective)<br>",
+        "5": "5(Very Effective)",
         "4": "4<br>",
         "3": "3(Average)<br>",
         "2": "2<br>",
         "1": "1(Not Effective)<br>",
-        "x": "0(Not Observed)"
+        "0": "0(Not Observed)<br>"
       },
       "defaultValue": "0"
     },
@@ -133,12 +133,12 @@ var config_data = `
       "code": "DriverSkillInMatch",
       "type": "radio",
       "choices": {
-        "5": "5(Very Effective)<br>",
+        "5": "5(Very Effective)",
         "4": "4<br>",
         "3": "3(Average)<br>",
         "2": "2<br>",
         "1": "1(Not Effective)<br>",
-        "x": "0(Not Observed)"
+        "0": "0(Not Observed)<br>"
       },
       "defaultValue": "0"
     },
@@ -146,12 +146,12 @@ var config_data = `
       "code": "SpeedRatingInMatch",
       "type": "radio",
       "choices": {
-        "5": "5(Very Effective)<br>",
+        "5": "5(Very Effective)",
         "4": "4<br>",
         "3": "3(Average)<br>",
         "2": "2<br>",
         "1": "1(Not Effective)<br>",
-        "x": "0(Not Observed)"
+        "0": "0(Not Observed)<br>"
       },
       "defaultValue":"0"
     },
