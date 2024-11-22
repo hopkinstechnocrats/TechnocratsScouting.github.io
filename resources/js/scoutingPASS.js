@@ -503,14 +503,14 @@ function addNumber(table, idx, name, data) {
     cell2.appendChild(def);
   }
 
-  if (data.type == 'team') {
-    idx += 1
-    row = table.insertRow(idx);
-    cell1 = row.insertCell(0);
-    cell1.setAttribute("id", "teamname-label");
-    cell1.setAttribute("colspan", 2);
-    cell1.setAttribute("style", "text-align: center;");
-  }
+//  if (data.type == 'team') {
+//    idx += 1
+//    row = table.insertRow(idx);
+//    cell1 = row.insertCell(0);
+//    cell1.setAttribute("id", "teamname-label");
+//    cell1.setAttribute("colspan", 2);
+//    cell1.setAttribute("style", "text-align: center;");
+//  }
 
   return idx + 1;
 }
@@ -857,14 +857,14 @@ function getData(dataFormat) {
 }
 
 function updateQRHeader() {
-  let str = 'Event: !EVENT! Match: !MATCH! Robot: !ROBOT! Team: !TEAM!';
+  let str = 'Event: !EVENT! Match: !MATCH! Robot: !ROBOT!';
 
   if (!pitScouting) {
     str = str
       .replace('!EVENT!', document.getElementById("input_e").value)
       .replace('!MATCH!', document.getElementById("input_m").value)
-      .replace('!ROBOT!', document.getElementById("display_r").value)
-      .replace('!TEAM!', document.getElementById("input_t").value);
+      .replace('!ROBOT!', document.getElementById("display_r").value);
+ //     .replace('!TEAM!', document.getElementById("input_t").value);
   } else {
     str = 'Pit Scouting - Team !TEAM!'
       .replace('!TEAM!', document.getElementById("input_t").value);
