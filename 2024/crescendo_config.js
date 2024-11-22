@@ -52,12 +52,6 @@ var config_data = `
         "9157": "Team 9157<br>"
       },
       "required":"true"
-    },
-    { "name": "Team #",
-      "code": "t",
-      "type": "team",
-      "min": 1,
-      "max": 99999
     }
   ],
   "auton": [
