@@ -117,7 +117,7 @@ var config_data = `
     "type": "bool"
     },
     { "name": "Defense Rating",
-      "code": "DriverRatingInMatch",
+      "code": "DefenseRatingInMatch",
       "type": "radio",
       "choices": {
         "5": "5(Very Effective)",
