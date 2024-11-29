@@ -20,7 +20,7 @@ html, body{
     font-family : -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
     text-align: center;
     color: white;
-    font-size: 13px;
+    font-size: 25px;
     font-style: bold;
     letter-spacing: 1px;
     border-width: 4px;
@@ -236,12 +236,32 @@ td {
     padding: 15px 10px;
 }
 
-input {
+#minus_NetScoresAuto, #minus_NetMissesAuto, #minus_HoopScoresAuto, #minus_HoopMissesAuto, #minus_NetScoresTele, #minus_NetMissesTele, #minus_HoopScoresTele, #minus_HoopMissesTele, #minus_SharksCollectedTotal{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fa756b;
+    padding: 8px 18px;
     font-size: 25px;
-    font: roboto;
-    color: black;
-    background-color: white;
+    color: white;
+    border: none;
+    border-radius: 4px;
 }
+#plus_NetScoresAuto, #plus_NetMissesAuto, #plus_HoopScoresAuto, #plus_HoopMissesAuto, #plus_NetScoresTele, #plus_NetMissesTele, #plus_HoopScoresTele, #plus_HoopMissesTele, #plus_SharksCollectedTotal{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #04AA6D;
+    padding: 8px 18px;
+    font-size: 25px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+   }
+#input_NetScoresAuto, #input_NetMissesAuto, #input_HoopScoresAuto, #input_HoopMissesAuto, #input_NetScoresTele, #input_NetMissesTele, #input_HoopScoresTele, #input_HoopMissesTele, #input_SharksCollectedTotal{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    padding: 8px 14px;
+    font-size: 25px;
+    color: black;
+    border: none;
+   }
 
 .title {
     width: "50%";
