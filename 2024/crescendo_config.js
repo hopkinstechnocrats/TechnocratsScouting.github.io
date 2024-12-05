@@ -106,7 +106,7 @@ var config_data = `
     }
   ],
   "postmatch": [
-    {"name": "Played Heavy Defense",
+    {"name": "Played Heavy Defense?",
     "code": "RobotPlayedHeavyDefenseInMatch",
     "type": "bool"
     },
