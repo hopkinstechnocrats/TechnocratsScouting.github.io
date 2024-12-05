@@ -106,7 +106,7 @@ var config_data = `
     }
   ],
   "postmatch": [
-    {"name": "Played Heavy Defense",
+    {"name": "Played Heavy Defense?",
     "code": "RobotPlayedHeavyDefenseInMatch",
     "type": "bool"
     },
@@ -149,24 +149,24 @@ var config_data = `
       },
       "defaultValue":"0"
     },
-    {"name": "Excessive Net Hits(3+)",
+    {"name": "3+ Net Hits?",
     "code": "RobotHitTheNetExcessively",
     "type": "bool"
     },
-    {"name": "Excessive Shots Out of Starting Zone(4+)",
+    {"name": "4+ Shots From<br/>Out of Zone?",
     "code": "RobotShotFromTheStartZoneExcessively",
     "type": "bool"
     },
-    { "name": "Died/Immobilized",
+    { "name": "Died/Immobilized?",
       "code": "RobotDiedInMatch",
       "type": "bool"
     },
-    { "name": "Tippy<br>(almost tipped over)",
+    { "name": "Almost tipped over?",
       "code": "RobotWasTippyInMatch",
       "type": "bool"
     },
-    { "name": "Make good<br>alliance partner?",
-      "tooltip": "Would you want this robot on your alliance in eliminations?",
+    { "name": "Make good alliance<br/>partner?",
+      "tooltip": "Would you want this robot?",
       "code": "RobotWouldMakeGoodPartner",
       "type": "bool"
     },
