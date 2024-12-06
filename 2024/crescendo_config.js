@@ -38,7 +38,7 @@ var config_data = `
     { "name": "Robot",
       "code": "r",
       "type": "robot",
-      "choices": 
+      "choices": {
         "2823": "2823<br>",
         "3082": "3082<br>",
         "4174": "4174<br>",
