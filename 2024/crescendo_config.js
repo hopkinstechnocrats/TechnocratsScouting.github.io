@@ -38,7 +38,7 @@ var config_data = `
     { "name": "Robot",
       "code": "r",
       "type": "robot",
-      "choices": {
+      "choices": 
         "2129": "2129<br>",
         "2239.1": "2239.1(tau-cans)<br>",
         "2239.2": "2239.2(phi-nixes)<br>",
